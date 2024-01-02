@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: burlywood; /* softer background to avoid sharp white */
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.text h2 {
+  color: black;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 8px 0; /* Smaller padding for the footer */
+  position: relative; /* relative too make sure both the copyright and picture doesn't conflict with the text */
+  width: 100%;
+  font-size: 12px; /* Smaller font size */
+  margin-top: 20px; /* Add space between main content and footer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-end; /* Adjust alignment to the end */
+  align-items: center;
+  padding: 10px;
+}
+
+.author-info img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* Makes the image circular if desired */
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.author-info p {
+  margin: 0;
+  font-weight: bold; /* Adjust font styles as needed */
+}
