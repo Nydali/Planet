@@ -2,15 +2,47 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: burlywood; /* softer background to avoid sharp white */
+  background-color: gray; /* softer background to avoid sharp white */
   color: #333;
 }
+
+/* ... (previous styles remain the same) */
 
 header {
   background-color: #333;
   color: white;
-  text-align: center;
   padding: 20px 0;
+  display: flex;
+  justify-content: center; /* Center align content horizontally */
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+}
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+nav a:hover {
+  color: lightgray; /* Change color on hover */
 }
 
 main {
@@ -61,4 +93,43 @@ footer {
 .author-info p {
   margin: 0;
   font-weight: bold; /* Adjust font styles as needed */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  display: none; /* Hide by default */
+}
+
+.dropdown ul li {
+  padding: 10px;
+}
+
+.dropdown ul li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown ul.show {
+  display: block; /* Show when the button is clicked */
 }

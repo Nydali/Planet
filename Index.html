@@ -7,7 +7,15 @@
   </head>
   <body>
     <header>
-      <h1>Exploring Venus</h1>
+    <h1 class="logo">Exploring Venus</h1>
+    <div class="dropdown">
+      <button onclick="toggleDropdown()">Menu &#9660;</button>
+      <ul id="dropdownContent">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -20,6 +28,7 @@
             system. It is often referred to as Earth's "sister planet" due to
             its similar size and composition.
           </p>
+          <img src="planets.jpg" alt="planets">
           <p>
             Venus has a diameter of 12,104 km and an orbit period of 225 Earth
             days. Its surface temperature is about 462°C. Despite its
@@ -34,6 +43,7 @@
             volcanic structures. One of the most prominent features is Maxwell
             Montes, the highest mountain on Venus.
           </p>
+          <img src="Venus surface.jpg" alt="Venus Surface">
           <h2>Exploration</h2>
           <p>
             Several spacecraft have visited Venus, including the Soviet Venera
@@ -76,5 +86,14 @@
         <p>Copyright © 2024 Jørgen Martinsen</p>
       </div>
     </footer>
+
+    <script>
+    function toggleDropdown() {
+      const dropdownContent = document.getElementById("dropdownContent");
+      dropdownContent.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
   </body>
 </html>
